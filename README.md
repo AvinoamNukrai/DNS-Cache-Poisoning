@@ -14,11 +14,10 @@ is static in BIND 9.4.1, it suffices to predict the TXID and by
 that spoof DNS answers and poison the cache.
 
 
-A Simple Implementation Diagram:
+**A Simple Implementation Diagram:
+**
 
-
-
-![WhatsApp Image 2025-01-12 at 10 05 46](https://github.com/user-attachments/assets/0bd640a6-3e7f-4055-b042-5ffb9dcb609c)
+![WhatsApp Image 2025-01-12 at 10 05 46](https://github.com/user-attachments/assets/875888ba-f9f3-4ac9-ba99-befe637410f6)
 
 
 

@@ -17,7 +17,7 @@ that spoof DNS answers and poison the cache.
 General:
 The attack aims to manipulate the DNS resolution process by exploiting weak transaction ID (TXID) randomness, allowing the attacker to inject malicious DNS responses. The attack is carried out through two coordinated components: an authoritative name server and an attacker client.
 
-Implementatio: 
+Implementation: 
 
 The server code (attack_server.c) acts as the attacker’s authoritative DNS server. It listens for incoming DNS requests on port 53 and extracts the TXID and source port from each request. For even TXIDs, the server forwards the TXID and port to the attacker’s client via a UDP message, which is used to craft spoofed responses. For odd TXIDs, the server responds with an attacker-controlled subdomain to avoid suspicion. The server creates DNS CNAME records dynamically based on the TXID, either pointing to a legitimate domain or to a subdomain under the attacker’s control.
 
